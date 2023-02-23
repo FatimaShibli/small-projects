@@ -1,0 +1,31 @@
+output: movie.o movies.o loan.o loans.o customer.o customers.o main.o
+	g++ -o output movie.o movies.o loan.o loans.o customer.o customers.o main.o
+
+movie.o: movie.cpp movie.h
+	g++ -c movie.cpp
+
+movies.o: movies.cpp movies.h
+	g++ -c movies.cpp
+
+loan.o: loan.cpp loan.h
+	g++ -c loan.cpp
+
+loans.o: loans.cpp loans.h movies.h customers.cpp
+	g++ -c loans.cpp
+
+customer.o: customers.cpp customer.h
+	g++ -c customer.cpp
+
+customers.o: customers.cpp customers.h
+	g++ -c customers.cpp
+
+main.o: main.cpp loans.h
+	g++ -c main.cpp
+
+clean:
+	rm *.o output
+
+run:
+	./output
+
+
