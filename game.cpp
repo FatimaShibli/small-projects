@@ -15,7 +15,6 @@ cout << "+---------------------------------------------------------+"<<endl;
 cout << "|            Computer Science and Engineering             |"<<endl;
 cout << "|             CSCE 1030 - Computer Science 1              |"<<endl;
 cout << "|   Fatima Shibli    fms0055    FatimaShibli@my.unt.edu   |"<<endl;
-cout << "|   Discussed with Samantha paxton and Any Khounnoraj     |"<<endl;
 cout << "+---------------------------------------------------------+"<<endl;
 
 
